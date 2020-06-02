@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Flask Example</title>
+  </head>
+  <body>
+    <form method="POST" action="/register">
+      <label> Registering for music concert in University</label><br><br>
+      <label for="id">Student id: </label>
+      <input type="text" id="id" name="id" ><br>
+      <label for="name">Sudent name: </label>
+      <input type="text" id="name" name="name"><br>
+      <label for="email">Sudent email: </label>
+      <input type="text" id="email" name="email"><br>
+      <select name = "department">
+      <option disabled selected value="">Campus</option>
+      <option value="Main Campus">Main Campus</option>
+      <option value="Orange Campus">Orange Campus</option>
+      <option value="Saw Mill Campus">Saw Mill Campus</option>
+      <option value="Albuquerque, NM">Albuquerque, NM</option>
+      </select>
+      <input type="submit" name="submit" value="Submit">
+    </form>
+
+    <form action="/registered" method="">
+      <br><input type="submit" name="submit" value="Registered Student">
+
+    </form>
+  </body>
+</html>
